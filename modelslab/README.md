@@ -1,39 +1,73 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd1908c3-d59d-4902-8c79-bf48869c1109" alt="ModelsLab Logo" />
+</p>
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+<div align="center">
+  <a href="https://discord.com/invite/modelslab-1033301189254729748">
+    <img src="https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+  </a>
+  <a href="https://x.com/ModelsLabAI">
+    <img src="https://img.shields.io/badge/X-@ModelsLabAI-000000?style=for-the-badge&logo=twitter&logoColor=white" alt="X/Twitter">
+  </a>
+  <a href="https://github.com/ModelsLab">
+    <img src="https://img.shields.io/badge/GitHub-ModelsLab-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</div>
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Modelslab provides cutting-edge **Generative AI APIs** for building production-grade AI-native applications with ease. Whether you need **image generation**, **text generation**, **video synthesis**, or **voice cloning**, Modelslab gives you high-performance APIs to power your product.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+📚 **Docs**: [https://docs.modelslab.com](https://docs.modelslab.com)
 
-## Features
+---
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## ✨ What is Modelslab?
 
-## Getting started
+Modelslab is an API platform that offers:
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+* 🎨 Image generation (text-to-image, inpainting, upscaling)
+* 💬 Chat APIs (uncensored chat, character-based dialogues)
+* 🎥 Video generation (AI lip-sync, talking head, motion transfer)
+* 🗣 Voice cloning and text-to-speech
+* 🧠 Fast inference backend with GPU-optimized APIs
 
-## Usage
+You can plug these APIs into your apps, games, websites, or automation tools with just a few lines of code.
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+---
 
-```dart
-const like = 'sample';
+## 🚀 Installation
+
+Add this to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  modelslab: ^1.0.0
 ```
 
-## Additional information
+Then run:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```bash
+dart pub get
+```
+
+---
+
+## 🛠 Usage
+
+> Coming soon — Dart SDK will provide simple class-based wrappers around Modelslab APIs for quick integration.
+
+For full API documentation and usage examples, visit the official docs:
+
+📚 [Modelslab Documentation](https://docs.modelslab.com)
+
+---
+
+## 💬 Feedback & Community
+
+* GitHub: [https://github.com/Modelslab](https://github.com/Modelslab)
+* Twitter: [@modelslab](https://x.com/ModelsLabAI)
+
+---
+
+## 📄 License
+
+MIT

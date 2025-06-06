@@ -1,7 +1,9 @@
 name: modelslab
-description: "A new Flutter package project."
+description: "Modelslab API SDK."
 version: 0.0.1
-homepage:
+homepage: https://modelslab.com
+repository: https://github.com/ModelsLab/modelslab-dart
+documentation: https://docs.modelslab.com
 
 environment:
   sdk: ^3.6.0
