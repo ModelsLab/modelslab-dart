@@ -1,5 +1,5 @@
 class SkechRendringSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -12,7 +12,7 @@ class SkechRendringSchema {
   final int? numInferenceSteps;
 
   const SkechRendringSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -27,7 +27,7 @@ class SkechRendringSchema {
 
   factory SkechRendringSchema.fromJson(Map<String, dynamic> json) {
     return SkechRendringSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -42,7 +42,7 @@ class SkechRendringSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -57,7 +57,7 @@ class SkechRendringSchema {
 }
 
 class InteriorSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -70,7 +70,7 @@ class InteriorSchema {
   final int? numInferenceSteps;
 
   const InteriorSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -85,7 +85,7 @@ class InteriorSchema {
 
   factory InteriorSchema.fromJson(Map<String, dynamic> json) {
     return InteriorSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -100,7 +100,7 @@ class InteriorSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -115,7 +115,7 @@ class InteriorSchema {
 }
 
 class RoomDecoratorSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -128,7 +128,7 @@ class RoomDecoratorSchema {
   final int? numInferenceSteps;
 
   const RoomDecoratorSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -143,7 +143,7 @@ class RoomDecoratorSchema {
 
   factory RoomDecoratorSchema.fromJson(Map<String, dynamic> json) {
     return RoomDecoratorSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -158,7 +158,7 @@ class RoomDecoratorSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -173,7 +173,7 @@ class RoomDecoratorSchema {
 }
 
 class FloorSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -186,7 +186,7 @@ class FloorSchema {
   final int? numInferenceSteps;
 
   const FloorSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -201,7 +201,7 @@ class FloorSchema {
 
   factory FloorSchema.fromJson(Map<String, dynamic> json) {
     return FloorSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -216,7 +216,7 @@ class FloorSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -231,7 +231,7 @@ class FloorSchema {
 }
 
 class ExteriorSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -244,7 +244,7 @@ class ExteriorSchema {
   final int? numInferenceSteps;
 
   const ExteriorSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -259,7 +259,7 @@ class ExteriorSchema {
 
   factory ExteriorSchema.fromJson(Map<String, dynamic> json) {
     return ExteriorSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -274,7 +274,7 @@ class ExteriorSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -289,7 +289,7 @@ class ExteriorSchema {
 }
 
 class ScenarioSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -303,7 +303,7 @@ class ScenarioSchema {
   final String? scenario;
 
   const ScenarioSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -319,7 +319,7 @@ class ScenarioSchema {
 
   factory ScenarioSchema.fromJson(Map<String, dynamic> json) {
     return ScenarioSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -335,7 +335,7 @@ class ScenarioSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,

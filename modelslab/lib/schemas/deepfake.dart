@@ -1,5 +1,5 @@
 class SpecificFaceSwap {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic initImage;
@@ -8,7 +8,7 @@ class SpecificFaceSwap {
   final bool? watermark;
 
   const SpecificFaceSwap({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.initImage,
@@ -19,7 +19,7 @@ class SpecificFaceSwap {
 
   factory SpecificFaceSwap.fromJson(Map<String, dynamic> json) {
     return SpecificFaceSwap(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       initImage: json['init_image'],
@@ -30,7 +30,7 @@ class SpecificFaceSwap {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'init_image': initImage,
@@ -41,7 +41,7 @@ class SpecificFaceSwap {
 }
 
 class MultipleFaceSwap {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic initImage;
@@ -49,7 +49,7 @@ class MultipleFaceSwap {
   final bool? watermark;
 
   const MultipleFaceSwap({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.initImage,
@@ -59,7 +59,7 @@ class MultipleFaceSwap {
 
   factory MultipleFaceSwap.fromJson(Map<String, dynamic> json) {
     return MultipleFaceSwap(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       initImage: json['init_image'],
@@ -69,7 +69,7 @@ class MultipleFaceSwap {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'init_image': initImage,
@@ -79,7 +79,7 @@ class MultipleFaceSwap {
 }
 
 class SingleVideoSwap {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic initImage;
@@ -88,7 +88,7 @@ class SingleVideoSwap {
   final bool? watermark;
 
   const SingleVideoSwap({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.initImage,
@@ -99,7 +99,7 @@ class SingleVideoSwap {
 
   factory SingleVideoSwap.fromJson(Map<String, dynamic> json) {
     return SingleVideoSwap(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       initImage: json['init_image'],
@@ -110,7 +110,7 @@ class SingleVideoSwap {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'init_image': initImage,
@@ -121,7 +121,7 @@ class SingleVideoSwap {
 }
 
 class SpecificVideoSwap {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic initImage;
@@ -131,7 +131,7 @@ class SpecificVideoSwap {
   final bool? watermark;
 
   const SpecificVideoSwap({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.initImage,
@@ -143,7 +143,7 @@ class SpecificVideoSwap {
 
   factory SpecificVideoSwap.fromJson(Map<String, dynamic> json) {
     return SpecificVideoSwap(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       initImage: json['init_image'],
@@ -155,7 +155,7 @@ class SpecificVideoSwap {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'init_image': initImage,

@@ -1,5 +1,5 @@
 class Text23D {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -20,7 +20,7 @@ class Text23D {
   final String? temp;
 
   const Text23D({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -43,7 +43,7 @@ class Text23D {
 
   factory Text23D.fromJson(Map<String, dynamic> json) {
     return Text23D(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -67,7 +67,7 @@ class Text23D {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -90,7 +90,7 @@ class Text23D {
 }
 
 class Image23D {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic image;
@@ -107,7 +107,7 @@ class Image23D {
   final String? temp;
 
   const Image23D({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.image,
@@ -126,7 +126,7 @@ class Image23D {
 
   factory Image23D.fromJson(Map<String, dynamic> json) {
     return Image23D(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       image: json['image'],
@@ -146,7 +146,7 @@ class Image23D {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'image': image,

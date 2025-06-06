@@ -1,5 +1,5 @@
 class Text2Video {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String modelId;
@@ -14,7 +14,7 @@ class Text2Video {
   final int? fps;
 
   const Text2Video({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.modelId,
@@ -31,7 +31,7 @@ class Text2Video {
 
   factory Text2Video.fromJson(Map<String, dynamic> json) {
     return Text2Video(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       modelId: json['model_id'],
@@ -48,7 +48,7 @@ class Text2Video {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'model_id': modelId,
@@ -65,7 +65,7 @@ class Text2Video {
 }
 
 class Image2Video {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String modelId;
@@ -81,7 +81,7 @@ class Image2Video {
   final dynamic initImage;
 
   const Image2Video({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.modelId,
@@ -99,7 +99,7 @@ class Image2Video {
 
   factory Image2Video.fromJson(Map<String, dynamic> json) {
     return Image2Video(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       modelId: json['model_id'],
@@ -117,7 +117,7 @@ class Image2Video {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'model_id': modelId,
@@ -135,7 +135,7 @@ class Image2Video {
 }
 
 class Text2VideoUltra {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -150,7 +150,7 @@ class Text2VideoUltra {
   final int? sampleShift;
 
   const Text2VideoUltra({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -167,7 +167,7 @@ class Text2VideoUltra {
 
   factory Text2VideoUltra.fromJson(Map<String, dynamic> json) {
     return Text2VideoUltra(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -184,7 +184,7 @@ class Text2VideoUltra {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,

@@ -1,5 +1,5 @@
 class Text2Image {
-  final String apiKey;
+  final String key;
   final String prompt;
   final String? modelId;
   final String? negativePrompt;
@@ -21,7 +21,7 @@ class Text2Image {
   final int? clipSkip;
 
   const Text2Image({
-    required this.apiKey,
+    required this.key,
     required this.prompt,
     this.modelId,
     this.negativePrompt,
@@ -44,7 +44,7 @@ class Text2Image {
   });
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'prompt': prompt,
         'model_id': modelId,
         'negative_prompt': negativePrompt,
@@ -68,7 +68,7 @@ class Text2Image {
 }
 
 class Image2Image {
-  final String apiKey;
+  final String key;
   final String prompt;
   final dynamic initImage;
   final String? modelId;
@@ -91,7 +91,7 @@ class Image2Image {
   final int? clipSkip;
 
   const Image2Image({
-    required this.apiKey,
+    required this.key,
     required this.prompt,
     required this.initImage,
     this.modelId,
@@ -115,7 +115,7 @@ class Image2Image {
   });
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'prompt': prompt,
         'init_image': initImage,
         'model_id': modelId,
@@ -140,7 +140,7 @@ class Image2Image {
 }
 
 class Inpainting {
-  final String apiKey;
+  final String key;
   final String prompt;
   final dynamic initImage;
   final dynamic maskImage;
@@ -164,7 +164,7 @@ class Inpainting {
   final int? clipSkip;
 
   const Inpainting({
-    required this.apiKey,
+    required this.key,
     required this.prompt,
     required this.initImage,
     required this.maskImage,
@@ -189,7 +189,7 @@ class Inpainting {
   });
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'prompt': prompt,
         'init_image': initImage,
         'mask_image': maskImage,
@@ -215,7 +215,7 @@ class Inpainting {
 }
 
 class ControlNet {
-  final String apiKey;
+  final String key;
   final String prompt;
   final dynamic initImage;
   final dynamic maskImage;
@@ -242,7 +242,7 @@ class ControlNet {
   final double? strength;
 
   const ControlNet({
-    required this.apiKey,
+    required this.key,
     required this.prompt,
     required this.initImage,
     required this.maskImage,
@@ -270,7 +270,7 @@ class ControlNet {
   });
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'prompt': prompt,
         'init_image': initImage,
         'mask_image': maskImage,

@@ -1,5 +1,5 @@
 class RealtimeText2ImageSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -15,7 +15,7 @@ class RealtimeText2ImageSchema {
   final int? samples;
 
   const RealtimeText2ImageSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -33,7 +33,7 @@ class RealtimeText2ImageSchema {
 
   factory RealtimeText2ImageSchema.fromJson(Map<String, dynamic> json) {
     return RealtimeText2ImageSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -51,7 +51,7 @@ class RealtimeText2ImageSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -69,7 +69,7 @@ class RealtimeText2ImageSchema {
 }
 
 class RealtimeImage2ImageSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -85,7 +85,7 @@ class RealtimeImage2ImageSchema {
   final int? samples;
 
   const RealtimeImage2ImageSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -103,7 +103,7 @@ class RealtimeImage2ImageSchema {
 
   factory RealtimeImage2ImageSchema.fromJson(Map<String, dynamic> json) {
     return RealtimeImage2ImageSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -121,7 +121,7 @@ class RealtimeImage2ImageSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -139,7 +139,7 @@ class RealtimeImage2ImageSchema {
 }
 
 class RealtimeInpaintingSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -156,7 +156,7 @@ class RealtimeInpaintingSchema {
   final int? samples;
 
   const RealtimeInpaintingSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -175,7 +175,7 @@ class RealtimeInpaintingSchema {
 
   factory RealtimeInpaintingSchema.fromJson(Map<String, dynamic> json) {
     return RealtimeInpaintingSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -194,7 +194,7 @@ class RealtimeInpaintingSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,

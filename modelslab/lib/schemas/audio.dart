@@ -1,5 +1,5 @@
 class Text2Audio {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -12,7 +12,7 @@ class Text2Audio {
   final bool? stream;
 
   const Text2Audio({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -27,7 +27,7 @@ class Text2Audio {
 
   factory Text2Audio.fromJson(Map<String, dynamic> json) {
     return Text2Audio(
-      apiKey: json['api_key'] as String,
+      key: json['key'] as String,
       webhook: json['webhook'] as String?,
       trackId: json['track_id'] as String?,
       prompt: json['prompt'] as String,
@@ -43,7 +43,7 @@ class Text2Audio {
 
   Map<String, dynamic> toJson() {
     return {
-      'api_key': apiKey,
+      'key': key,
       if (webhook != null) 'webhook': webhook,
       if (trackId != null) 'track_id': trackId,
       'prompt': prompt,
@@ -59,7 +59,7 @@ class Text2Audio {
 }
 
 class Text2Speech {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -70,7 +70,7 @@ class Text2Speech {
   final double? temp;
 
   const Text2Speech({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -83,7 +83,7 @@ class Text2Speech {
 
   factory Text2Speech.fromJson(Map<String, dynamic> json) {
     return Text2Speech(
-      apiKey: json['api_key'] as String,
+      key: json['key'] as String,
       webhook: json['webhook'] as String?,
       trackId: json['track_id'] as String?,
       prompt: json['prompt'] as String,
@@ -97,7 +97,7 @@ class Text2Speech {
 
   Map<String, dynamic> toJson() {
     return {
-      'api_key': apiKey,
+      'key': key,
       if (webhook != null) 'webhook': webhook,
       if (trackId != null) 'track_id': trackId,
       'prompt': prompt,
@@ -111,7 +111,7 @@ class Text2Speech {
 }
 
 class Voice2Voice {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic initAudio;
@@ -121,7 +121,7 @@ class Voice2Voice {
   final bool? stream;
 
   const Voice2Voice({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.initAudio,
@@ -133,7 +133,7 @@ class Voice2Voice {
 
   factory Voice2Voice.fromJson(Map<String, dynamic> json) {
     return Voice2Voice(
-      apiKey: json['api_key'] as String,
+      key: json['key'] as String,
       webhook: json['webhook'] as String?,
       trackId: json['track_id'] as String?,
       initAudio: json['init_audio'],
@@ -146,7 +146,7 @@ class Voice2Voice {
 
   Map<String, dynamic> toJson() {
     return {
-      'api_key': apiKey,
+      'key': key,
       if (webhook != null) 'webhook': webhook,
       if (trackId != null) 'track_id': trackId,
       'init_audio': initAudio,
@@ -159,7 +159,7 @@ class Voice2Voice {
 }
 
 class VoiceCover {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final dynamic initAudio;
@@ -186,7 +186,7 @@ class VoiceCover {
   final double? temp;
 
   const VoiceCover({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.initAudio,
@@ -215,7 +215,7 @@ class VoiceCover {
 
   factory VoiceCover.fromJson(Map<String, dynamic> json) {
     return VoiceCover(
-      apiKey: json['api_key'] as String,
+      key: json['key'] as String,
       webhook: json['webhook'] as String?,
       trackId: json['track_id'] as String?,
       initAudio: json['init_audio'],
@@ -245,7 +245,7 @@ class VoiceCover {
 
   Map<String, dynamic> toJson() {
     return {
-      'api_key': apiKey,
+      'key': key,
       if (webhook != null) 'webhook': webhook,
       if (trackId != null) 'track_id': trackId,
       'init_audio': initAudio,
@@ -278,7 +278,7 @@ class VoiceCover {
 }
 
 class MusicGenSchema {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -289,7 +289,7 @@ class MusicGenSchema {
   final int? samplingRate;
 
   const MusicGenSchema({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -302,7 +302,7 @@ class MusicGenSchema {
 
   factory MusicGenSchema.fromJson(Map<String, dynamic> json) {
     return MusicGenSchema(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -315,7 +315,7 @@ class MusicGenSchema {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -328,13 +328,13 @@ class MusicGenSchema {
 }
 
 class LyricsGenerator {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
 
   const LyricsGenerator({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -342,7 +342,7 @@ class LyricsGenerator {
 
   factory LyricsGenerator.fromJson(Map<String, dynamic> json) {
     return LyricsGenerator(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -350,7 +350,7 @@ class LyricsGenerator {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,
@@ -358,7 +358,7 @@ class LyricsGenerator {
 }
 
 class SongGenerator {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final bool? lyricsGeneration;
@@ -367,7 +367,7 @@ class SongGenerator {
   final String? lyrics;
 
   const SongGenerator({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     this.lyricsGeneration,
@@ -378,7 +378,7 @@ class SongGenerator {
 
   factory SongGenerator.fromJson(Map<String, dynamic> json) {
     return SongGenerator(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       lyricsGeneration: json['lyrics_generation'],
@@ -389,7 +389,7 @@ class SongGenerator {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'lyrics_generation': lyricsGeneration,
@@ -400,7 +400,7 @@ class SongGenerator {
 }
 
 class Speech2Text {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String audioUrl;
@@ -408,7 +408,7 @@ class Speech2Text {
   final String? timestampLevel;
 
   const Speech2Text({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.audioUrl,
@@ -418,7 +418,7 @@ class Speech2Text {
 
   factory Speech2Text.fromJson(Map<String, dynamic> json) {
     return Speech2Text(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       audioUrl: json['audio_url'],
@@ -428,7 +428,7 @@ class Speech2Text {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'audio_url': audioUrl,
@@ -438,7 +438,7 @@ class Speech2Text {
 }
 
 class SFX {
-  final String apiKey;
+  final String key;
   final String? webhook;
   final String? trackId;
   final String prompt;
@@ -446,7 +446,7 @@ class SFX {
   final bool? temp;
 
   const SFX({
-    required this.apiKey,
+    required this.key,
     this.webhook,
     this.trackId,
     required this.prompt,
@@ -456,7 +456,7 @@ class SFX {
 
   factory SFX.fromJson(Map<String, dynamic> json) {
     return SFX(
-      apiKey: json['api_key'],
+      key: json['key'],
       webhook: json['webhook'],
       trackId: json['track_id'],
       prompt: json['prompt'],
@@ -466,7 +466,7 @@ class SFX {
   }
 
   Map<String, dynamic> toJson() => {
-        'api_key': apiKey,
+        'key': key,
         'webhook': webhook,
         'track_id': trackId,
         'prompt': prompt,

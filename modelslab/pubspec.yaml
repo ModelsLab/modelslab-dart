@@ -1,6 +1,6 @@
 name: modelslab
 description: "Modelslab API SDK."
-version: 0.0.1
+version: 0.0.2
 homepage: https://modelslab.com
 repository: https://github.com/ModelsLab/modelslab-dart
 documentation: https://docs.modelslab.com

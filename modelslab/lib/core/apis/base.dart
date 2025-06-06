@@ -24,7 +24,7 @@ class BaseAPI {
     for (int i = 0; i < client.fetchRetry; i++) {
       response = await _post(
         endpoint,
-        data: {'key': client.apiKey},
+        data: {'key': client.key},
       );
 
       if (response['status'] == 'success') {
@@ -45,35 +45,35 @@ class BaseAPI {
   Future<Map<String, dynamic>> systemDetails() async {
     _requireEnterprise();
     final endpoint = '$baseUrl/system_details';
-    return await _post(endpoint, data: {'key': client.apiKey});
+    return await _post(endpoint, data: {'key': client.key});
   }
 
   /// Restart server (Enterprise only)
   Future<Map<String, dynamic>> restart() async {
     _requireEnterprise();
     final endpoint = '$baseUrl/restart_server';
-    return await _post(endpoint, data: {'key': client.apiKey});
+    return await _post(endpoint, data: {'key': client.key});
   }
 
   /// Update server (Enterprise only)
   Future<Map<String, dynamic>> update() async {
     _requireEnterprise();
     final endpoint = '$baseUrl/update';
-    return await _post(endpoint, data: {'key': client.apiKey});
+    return await _post(endpoint, data: {'key': client.key});
   }
 
   /// Clear cache (Enterprise only)
   Future<Map<String, dynamic>> clearCache() async {
     _requireEnterprise();
     final endpoint = '$baseUrl/clear_cache';
-    return await _post(endpoint, data: {'key': client.apiKey});
+    return await _post(endpoint, data: {'key': client.key});
   }
 
   /// Clear task queue (Enterprise only)
   Future<Map<String, dynamic>> clearQueue() async {
     _requireEnterprise();
     final endpoint = '$baseUrl/clear_queue';
-    return await _post(endpoint, data: {'key': client.apiKey});
+    return await _post(endpoint, data: {'key': client.key});
   }
 
   /// Internal helper method to require enterprise access
